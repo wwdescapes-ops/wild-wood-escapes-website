@@ -1,0 +1,125 @@
+.propertyContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    padding: 8rem 2rem;
+    border-bottom: 1px solid var(--border);
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.rowReverse {
+    /* Only applied on wider screens */
+}
+
+@media (min-width: 1024px) {
+    .rowReverse .textColumn {
+        order: 2;
+    }
+
+    .rowReverse .imageColumn {
+        order: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sectionRow {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 4rem 1.5rem;
+    }
+}
+
+.textColumn {
+    position: relative;
+    /* Allow the sticky element to slide all the way down the column */
+    height: 100%;
+}
+
+.stickyText {
+    position: sticky;
+    top: 40vh;
+    /* Sit roughly near the middle visually */
+    transform: translateY(-50%);
+    padding-right: 2rem;
+}
+
+.stickyRight {
+    padding-right: 0;
+    padding-left: 2rem;
+}
+
+@media (max-width: 1024px) {
+
+    .stickyText,
+    .stickyRight {
+        position: static;
+        transform: none;
+        padding: 0;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.stickyText h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    color: var(--foreground);
+}
+
+.accentLine {
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent);
+    margin-bottom: 2rem;
+}
+
+.stickyText p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    opacity: 0.8;
+    max-width: 500px;
+}
+
+.imageColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.imageWrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    background: linear-gradient(135deg, var(--surface) 0%, #eaeaea 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--foreground);
+    opacity: 0.6;
+    font-size: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    .imagePlaceholder {
+        background: linear-gradient(135deg, var(--surface) 0%, #222 100%);
+    }
+}

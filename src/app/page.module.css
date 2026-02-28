@@ -1,0 +1,222 @@
+.container {
+    overflow-x: hidden;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.95) 100%), url("/images/stock/wildwood-hero.avif") no-repeat center center;
+    background-size: cover;
+    border-bottom: 1px solid var(--border);
+    padding-top: 6rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .hero {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.95) 100%), url("/images/stock/wildwood-hero.avif") no-repeat center center;
+        background-size: cover;
+    }
+}
+
+.heroContent {
+    max-width: 800px;
+}
+
+.heroContent h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.heroContent p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heroActions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.secondaryBtn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondaryBtn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--surface);
+}
+
+.propertiesSection {
+    padding: 8rem 2rem;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.sectionHeader h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sectionHeader p {
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+
+.propertiesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .propertiesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .heroContent h1 {
+        font-size: 3.5rem;
+    }
+}
+
+.propertyCardWrapper {
+    display: flex;
+}
+
+.propertyCard {
+    flex: 1;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--surface);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+}
+
+.propertyCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.cardImagePlaceholder,
+.cardImagePlaceholderDark {
+    height: 350px;
+    background-color: #222;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+.cardImagePlaceholder {
+    background: url("/images/stock/jazby-main.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.cardImagePlaceholderDark {
+    background: url("/images/stock/wildwood-main.avif") no-repeat center center;
+    background-size: cover;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cardContent {
+    padding: 2.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContent h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.cardContent p {
+    opacity: 0.7;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.cardLink {
+    color: var(--accent);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: gap 0.3s ease;
+    gap: 0.5rem;
+    align-self: flex-start;
+}
+
+.cardLink:hover {
+    gap: 1rem;
+}
+
+.ctaSection {
+    background-color: var(--accent);
+    color: #fff;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.ctaContent h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.ctaContent p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-inverted {
+    background-color: #fff !important;
+    color: var(--accent) !important;
+}
+
+.btn-inverted:hover {
+    background-color: #f0f0f0 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-2px);
+}

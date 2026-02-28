@@ -1,0 +1,87 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--surface);
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.label {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.inputField {
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(190, 102, 53, 0.1);
+}
+
+.submitBtn {
+    margin-top: 1rem;
+    padding: 1rem !important;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.successMessage {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--surface);
+    border-radius: 12px;
+    border: 1px dashed var(--accent);
+}
+
+.successMessage h3 {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.successMessage p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.errorMessage {
+    color: #dc2626;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}

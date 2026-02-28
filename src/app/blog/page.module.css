@@ -1,0 +1,122 @@
+.pageContainer {
+    min-height: 100vh;
+}
+
+.pageHeader {
+    padding: 12rem 2rem 6rem;
+    background: linear-gradient(to bottom, var(--surface) 0%, var(--background) 100%);
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.headerContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.headerContent h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+}
+
+.headerContent p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.blogGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 3rem;
+    padding: 6rem 2rem;
+}
+
+.blogCard {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--surface);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.blogImage {
+    height: 240px;
+    width: 100%;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #222 0%, var(--accent) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 0.85rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.blogContent {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.blogMeta {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.blogContent h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.blogContent h2 a {
+    transition: color 0.2s ease;
+}
+
+.blogContent h2 a:hover {
+    color: var(--accent);
+}
+
+.blogContent p {
+    opacity: 0.7;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.readMore {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    transition: gap 0.3s ease;
+    gap: 0.5rem;
+}
+
+.readMore:hover {
+    gap: 1rem;
+}

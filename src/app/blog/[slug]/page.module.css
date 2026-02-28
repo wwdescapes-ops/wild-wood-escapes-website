@@ -1,0 +1,118 @@
+.pageContainer {
+    min-height: 100vh;
+}
+
+.blogHeader {
+    padding: 12rem 2rem 6rem;
+    background: linear-gradient(to bottom, var(--surface) 0%, var(--background) 100%);
+    border-bottom: 1px solid var(--border);
+}
+
+.headerContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.backLink {
+    color: var(--accent);
+    transition: opacity 0.2s ease;
+}
+
+.backLink:hover {
+    opacity: 0.8;
+}
+
+.date {
+    opacity: 0.6;
+}
+
+.headerContent h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.author {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.blogMain {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem 8rem;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #111, var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+.articleContent {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--foreground);
+    opacity: 0.9;
+    margin-bottom: 6rem;
+}
+
+.articleContent p {
+    margin-bottom: 2rem;
+}
+
+.bookingCta {
+    background-color: var(--surface);
+    padding: 4rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.bookingCta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bookingCta p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .headerContent h1 {
+        font-size: 2.5rem;
+    }
+
+    .imageContainer {
+        height: 250px;
+    }
+}

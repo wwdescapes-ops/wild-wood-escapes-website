@@ -1,0 +1,57 @@
+.pageContainer {
+    min-height: 100vh;
+}
+
+.pageHeader {
+    padding: 12rem 2rem 6rem;
+    background: linear-gradient(to bottom, var(--surface) 0%, var(--background) 100%);
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.headerContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.headerContent h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+}
+
+.headerContent p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.bookingCta {
+    padding: 8rem 2rem;
+    background-color: var(--surface);
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.ctaContent {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ctaContent h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.ctaContent p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .headerContent h1 {
+        font-size: 3rem;
+    }
+}
