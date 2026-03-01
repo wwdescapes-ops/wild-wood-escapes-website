@@ -4,6 +4,7 @@ import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import { User, Mail, Home, Calendar, MessageSquare } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import styles from './BookingForm.module.css';
 import { useSearchParams } from 'next/navigation';
 
@@ -27,22 +28,25 @@ export default function BookingForm({ defaultProperty }: BookingFormProps) {
         setStatus('loading');
 
         const formData = new FormData(e.currentTarget);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            checkIn: checkIn ? checkIn.toLocaleDateString() : '',
-            checkOut: checkOut ? checkOut.toLocaleDateString() : '',
-            property: formData.get('property'),
+
+        const templateParams = {
+            user_name: formData.get('name'),
+            user_email: formData.get('email'),
+            property_name: formData.get('property'),
+            check_in: checkIn ? checkIn.toLocaleDateString() : 'N/A',
+            check_out: checkOut ? checkOut.toLocaleDateString() : 'N/A',
             message: formData.get('message'),
         };
 
         try {
-            const response = await fetch('/api/send', {
-                method: 'POST',
-                body: JSON.stringify(data),
-            });
+            const result = await emailjs.send(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+                templateParams,
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+            );
 
-            if (response.ok) {
+            if (result.status === 200) {
                 setStatus('success');
             } else {
                 setStatus('error');
