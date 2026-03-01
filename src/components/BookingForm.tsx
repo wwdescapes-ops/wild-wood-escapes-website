@@ -10,9 +10,11 @@ import { useSearchParams } from 'next/navigation';
 
 interface BookingFormProps {
     defaultProperty?: string;
+    successTitle?: string;
+    successMessage?: string;
 }
 
-export default function BookingForm({ defaultProperty }: BookingFormProps) {
+export default function BookingForm({ defaultProperty, successTitle, successMessage }: BookingFormProps) {
     const searchParams = useSearchParams();
     const queryProperty = searchParams.get('property') === 'wildwood' ? 'Wild Wood Cottages' :
         searchParams.get('property') === 'jazby' ? 'Jazby Guest House' : '';
@@ -59,8 +61,8 @@ export default function BookingForm({ defaultProperty }: BookingFormProps) {
     if (status === 'success') {
         return (
             <div className={styles.successMessage}>
-                <h3>Request Sent Successfully!</h3>
-                <p>Thank you for your enquiry. We will get back to you with availability and rates via email very soon.</p>
+                <h3>{successTitle || 'Request Sent Successfully!'}</h3>
+                <p>{successMessage || 'Thank you for your enquiry. We will get back to you with availability and rates via email very soon.'}</p>
                 <button onClick={() => setStatus('idle')} className="btn-primary mt-4">Send Another</button>
             </div>
         );

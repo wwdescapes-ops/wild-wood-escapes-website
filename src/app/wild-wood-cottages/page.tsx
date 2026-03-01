@@ -83,7 +83,11 @@ export default function WildWoodPage() {
                     </div>
                     <div className={styles.formWrapper}>
                         <Suspense fallback={<div className={styles.formLoading}>Loading form...</div>}>
-                            <BookingForm defaultProperty="Wild Wood Cottages" />
+                            <BookingForm
+                                defaultProperty="Wild Wood Cottages"
+                                successTitle="Your Nature Retreat Awaits!"
+                                successMessage="Thank you for enquiring about the best cottages in Naivasha. We're excited to help you plan your serene getaway and will be in touch soon."
+                            />
                         </Suspense>
                     </div>
                 </div>

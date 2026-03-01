@@ -83,7 +83,11 @@ export default function JazbyPage() {
                     </div>
                     <div className={styles.formWrapper}>
                         <Suspense fallback={<div className={styles.formLoading}>Loading form...</div>}>
-                            <BookingForm defaultProperty="Jazby Guest House" />
+                            <BookingForm
+                                defaultProperty="Jazby Guest House"
+                                successTitle="Thank You for Choosing Jazby!"
+                                successMessage="We've received your enquiry for the best guest house in Naivasha. Our team will contact you shortly with a personalized quote for your stay."
+                            />
                         </Suspense>
                     </div>
                 </div>

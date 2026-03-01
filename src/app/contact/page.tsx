@@ -65,7 +65,10 @@ export default function ContactPage() {
                 <div className={styles.formSection}>
                     <h2>Send an Enquiry</h2>
                     <Suspense fallback={<p>Loading booking form...</p>}>
-                        <BookingForm />
+                        <BookingForm
+                            successTitle="Message Received!"
+                            successMessage="Thank you for reaching out to Wild Wood Escapes. Whether you're looking for the best guest house in Naivasha or a private cottage retreat, we'll get back to you shortly."
+                        />
                     </Suspense>
                 </div>
             </main>
