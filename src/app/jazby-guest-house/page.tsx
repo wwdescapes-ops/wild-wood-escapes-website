@@ -62,7 +62,7 @@ export default function JazbyPage() {
                         <div className={styles.amenity}><ShowerHead size={20} /> <span>Shower</span></div>
                         <div className={styles.amenity}><Utensils size={20} /> <span>Kitchenette</span></div>
                     </div>
-                    <button onClick={scrollToBooking} className="btn-primary">Book Jazby Now</button>
+                    <button onClick={scrollToBooking} className="btn-primary">Reserve Jazby Now</button>
                 </div>
             </header>
 
