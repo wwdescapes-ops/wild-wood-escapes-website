@@ -25,7 +25,8 @@ export default function BookingForm({ defaultProperty }: BookingFormProps) {
         const data = {
             name: formData.get('name'),
             email: formData.get('email'),
-            dates: formData.get('dates'),
+            checkIn: formData.get('checkIn'),
+            checkOut: formData.get('checkOut'),
             property: formData.get('property'),
             message: formData.get('message'),
         };
@@ -82,10 +83,17 @@ export default function BookingForm({ defaultProperty }: BookingFormProps) {
                 ) : (
                     <input type="hidden" name="property" value={defaultProperty} />
                 )}
+            </div>
+
+            <div className={styles.row}>
+                <div className={styles.formGroup}>
+                    <label htmlFor="checkIn" className={styles.label}>Check-in Date</label>
+                    <input type="date" id="checkIn" name="checkIn" required className={styles.inputField} />
+                </div>
 
                 <div className={styles.formGroup}>
-                    <label htmlFor="dates" className={styles.label}>Preferred Dates</label>
-                    <input type="text" id="dates" name="dates" required placeholder="e.g. 15 Oct - 20 Oct" className={styles.inputField} />
+                    <label htmlFor="checkOut" className={styles.label}>Check-out Date</label>
+                    <input type="date" id="checkOut" name="checkOut" required className={styles.inputField} />
                 </div>
             </div>
 

@@ -5,7 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
     try {
-        const { name, email, dates, property, message } = await request.json();
+        const { name, email, checkIn, checkOut, property, message } = await request.json();
 
         const data = await resend.emails.send({
             from: 'Wild Wood Bookings <onboarding@resend.dev>',
@@ -14,7 +14,8 @@ export async function POST(request: Request) {
             text: `
 Name: ${name}
 Email: ${email}
-Dates: ${dates}
+Check-in: ${checkIn}
+Check-out: ${checkOut}
 Property: ${property}
 
 Message: 
