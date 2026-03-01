@@ -174,6 +174,146 @@
     gap: 1rem;
 }
 
+.amenitiesSection {
+    padding: 10rem 2rem;
+    background-color: var(--surface);
+    --color-blue: #3b82f6;
+    --color-orange: #f59e0b;
+    --color-green: #10b981;
+    --color-purple: #8b5cf6;
+    --color-teal: #14b8a6;
+    --color-yellow: #eab308;
+    --color-pink: #ec4899;
+    --color-red: #ef4444;
+    --color-cyan: #06b6d4;
+}
+
+.amenitiesHeader {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 5rem;
+}
+
+.amenitiesHeader h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+}
+
+.amenitiesHeader p {
+    font-size: 1.2rem;
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+.amenityGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.amenityCard {
+    padding: 3.5rem 2rem;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.amenityCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.amenityCard:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+.amenityCard:hover::before {
+    opacity: 1;
+}
+
+.amenityIcon {
+    width: 64px;
+    height: 64px;
+    background-color: color-mix(in srgb, var(--accent-color) 10%, transparent);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin: 0 auto 2rem;
+    transition: all 0.4s ease;
+    border: 1px solid color-mix(in srgb, var(--accent-color) 20%, transparent);
+}
+
+.amenityCard:hover .amenityIcon {
+    background-color: var(--accent-color);
+    color: #fff;
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 10px 20px color-mix(in srgb, var(--accent-color) 30%, transparent);
+}
+
+.amenityCard h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.amenityCard:hover h3 {
+    color: var(--accent-color);
+}
+
+.amenityCard p {
+    font-size: 0.95rem;
+    opacity: 0.6;
+    line-height: 1.7;
+    transition: opacity 0.3s ease;
+}
+
+.amenityCard:hover p {
+    opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+    .amenityGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .amenitiesSection {
+        padding: 6rem 1rem;
+    }
+
+    .amenitiesHeader h2 {
+        font-size: 2.5rem;
+    }
+
+    .amenityGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .amenityCard {
+        padding: 2rem 1.5rem;
+    }
+}
+
 .ctaSection {
     background-color: var(--accent);
     color: #fff;
