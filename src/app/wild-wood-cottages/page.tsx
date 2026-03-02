@@ -14,31 +14,31 @@ const WILDWOOD_LOGO = "/logos/wildwood-cottages/wildwood-cottages-no-bg.png";
 const WILDWOOD_SECTIONS = [
     {
         id: "living-room",
-        title: "The Living Room",
+        title: "Spacious Living Room in Naivasha",
         description: "A haven of peace in our cottages in Naivasha. The seating area is equipped with a cozy sofa and soundproofing for total quiet, with large windows that invite the natural Nakuru County sunlight in for a perfect nature retreat.",
         images: wildwoodImages["living-room"]
     },
     {
         id: "kitchen",
-        title: "The Kitchen",
+        title: "Fully Equipped Self-Catering Kitchen",
         description: "Embrace the freedom of self-catering in one of the best cottages in Naivasha. Our kitchenette features modern tools to cook up a storm in your private sanctuary after a day of exploring Crescent Island or Hell's Gate.",
         images: wildwoodImages["kitchen"]
     },
     {
         id: "bedroom",
-        title: "The Bedroom",
+        title: "Serene Bedrooms with Mountain Views",
         description: "Wake up to breathtaking mountain and lake views in our premium nature retreat. These bedrooms offer a rustic feel with comfortable bedding, ensuring you are refreshed for your next Naivasha adventure.",
         images: wildwoodImages["bedroom"]
     },
     {
         id: "bathroom",
-        title: "The Bathroom",
+        title: "Modern and Clean Private Bathrooms",
         description: "Our private, spotless bathrooms are designed to complement your pristine getaway. Equipped with soothing showers and fresh towels, they provide the luxury you expect from the best cottages in Naivasha.",
         images: wildwoodImages["bathroom"]
     },
     {
         id: "exterior",
-        title: "The Exterior",
+        title: "Beautiful Exteriors and Nature Walks",
         description: "Step out into nature at one of the most accessible nature retreats in Nakuru County. Our ground floor units offer immediate access to the outdoors where you can marvel at the Naivasha landscape and nearby wildlife.",
         images: wildwoodImages["exterior"]
     }
@@ -57,7 +57,7 @@ export default function WildWoodPage() {
                 <div className={`container ${styles.headerContent}`}>
                     <div className={styles.headerText}>
                         <div className={styles.titleWrapper}>
-                            <h1>Wild Wood Cottages</h1>
+                            <h1>Wild Wood Cottages: Best Self-Catering Cottages in Naivasha</h1>
                             <div className={styles.propertyLogo}>
                                 <Image src={WILDWOOD_LOGO} alt="Wild Wood Logo" width={220} height={80} className={styles.headerLogo} />
                             </div>
@@ -88,7 +88,7 @@ export default function WildWoodPage() {
             <section id="booking" ref={bookingRef} className={styles.bookingSection}>
                 <div className={`container ${styles.bookingContainer}`}>
                     <div className={styles.bookingInfo}>
-                        <h2>Plan Your Escape</h2>
+                        <h2>Book Your Naivasha Nature Retreat</h2>
                         <p>Reconnect with nature at Wild Wood Cottages. Fill out the form below to enquire about availability and special rates for your serene getaway.</p>
                         <ul className={styles.bookingHighlights}>
                             <li>✓ Highly accessible units</li>

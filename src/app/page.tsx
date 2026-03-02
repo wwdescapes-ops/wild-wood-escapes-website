@@ -73,7 +73,7 @@ export default function Home() {
           transition={{ duration: 1, ease: 'easeOut' }}
           className={styles.heroContent}
         >
-          <h1>Discover Serenity in Naivasha</h1>
+          <h1>Best Guest Houses in Naivasha for Your Next Escape</h1>
           <p>
             Experience the best guest houses in Naivasha near Hell&apos;s Gate.
             A perfect blend of nature, comfort, and premium hospitality for your ultimate staycation in Naivasha.
@@ -127,7 +127,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className={styles.amenitiesHeader}
           >
-            <h2>World-Class Amenities</h2>
+            <h2>Premium Amenities at Our Naivasha Vacation Rentals</h2>
             <p>Providing the best guest accommodation in Naivasha with thoughtfully curated facilities to ensure your stay is memorable.</p>
           </motion.div>
 
@@ -157,7 +157,7 @@ export default function Home() {
 
       <section id="cta" className={styles.ctaSection}>
         <div className={`container ${styles.ctaContent}`}>
-          <h2>Ready for your escape?</h2>
+          <h2>Book the Best Cottages in Naivasha for Your Staycation</h2>
           <p>Book your stay at the best guest houses and cottages in Naivasha today. Experience the ultimate relaxation in our premium Naivasha holiday homes.</p>
           <Link href="/contact" className={styles.ctaButton}>
             <Phone size={20} />

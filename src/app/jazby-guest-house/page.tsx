@@ -14,31 +14,31 @@ const JAZBY_LOGO = "/logos/jazby/jazby-1-no-bg.png";
 const JAZBY_SECTIONS = [
     {
         id: "living-room",
-        title: "The Living Room",
+        title: "Comfortable Guest House Living Area",
         description: "Relax in our spacious, well-lit living area, designed to be one of the best guest rooms in Naivasha for comfort and style. Outfitted with plush seating and a flat-screen TV, it offers a warm ambiance perfect for unwinding after a day of adventure in Nakuru County.",
         images: jazbyImages["living-room"]
     },
     {
         id: "kitchen",
-        title: "The Kitchen",
+        title: "Shared Kitchen for Your Convenience",
         description: "Our fully equipped shared kitchen allows you to embrace the freedom of self-catering during your stay at our guest houses in Naivasha. Features modern appliances and ample counter space, ideal for preparing meals after exploring Hell's Gate.",
         images: jazbyImages["kitchen"]
     },
     {
         id: "bedroom",
-        title: "The Bedroom",
+        title: "Top-Rated Guest Rooms in Naivasha",
         description: "Rest easy in our plush rooms, offering some of the best guest accommodation in Naivasha. Each bedroom is designed for maximum tranquility with premium linens and soundproofing to ensure a peaceful night in the heart of Nakuru County.",
         images: jazbyImages["bedroom"]
     },
     {
         id: "bathroom",
-        title: "The Bathroom",
+        title: "Fresh and Modern Guest Bathrooms",
         description: "Experience modern elegance in our clean, private bathrooms. Featuring walk-in showers and premium toiletries, they provide a refreshing touch to your pristine getaway in Naivasha.",
         images: jazbyImages["bathroom"]
     },
     {
         id: "exterior",
-        title: "The Exterior",
+        title: "Outdoor Fireplace and Serene Garden",
         description: "Step outside to enjoy our outdoor fireplace and serene atmosphere. Take in the crisp Naivasha air where you might spot local wildlife, making Jazby one of the most sought-after guest houses in Naivasha for a nature retreat.",
         images: jazbyImages["exterior"]
     }
@@ -57,7 +57,7 @@ export default function JazbyPage() {
                 <div className={`container ${styles.headerContent}`}>
                     <div className={styles.headerText}>
                         <div className={styles.titleWrapper}>
-                            <h1>Jazby Guest House</h1>
+                            <h1>Jazby Guest House: Best Guest Accommodation in Naivasha</h1>
                             <div className={styles.propertyLogo}>
                                 <Image src={JAZBY_LOGO} alt="Jazby Logo" width={180} height={70} className={styles.headerLogo} />
                             </div>
@@ -88,7 +88,7 @@ export default function JazbyPage() {
             <section id="booking" ref={bookingRef} className={styles.bookingSection}>
                 <div className={`container ${styles.bookingContainer}`}>
                     <div className={styles.bookingInfo}>
-                        <h2>Reserve Your Stay</h2>
+                        <h2>Reserve Your Stay at Jazby Guest House</h2>
                         <p>Experience the ultimate comfort at Jazby Guest House. Fill out the form below, and our team will get back to you with availability and a personalized quote.</p>
                         <ul className={styles.bookingHighlights}>
                             <li>✓ Instant enquiry via Resend</li>

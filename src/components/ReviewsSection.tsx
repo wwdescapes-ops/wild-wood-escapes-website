@@ -33,7 +33,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ propertyName, isFeature
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        Guest Experiences
+                        Authentic Reviews from Our Naivasha Guests
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
