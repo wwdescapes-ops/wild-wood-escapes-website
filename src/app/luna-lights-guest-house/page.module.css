@@ -1,0 +1,148 @@
+.pageContainer {
+    min-height: 100vh;
+}
+
+.pageHeader {
+    padding: 12rem 2rem 6rem;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%), url("/images/stock/luna-light-hero.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 4rem;
+}
+
+.headerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.headerText {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.headerText h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.headerText p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.headerAmenities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+.amenity {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.bookingSection {
+    padding: 10rem 2rem;
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+}
+
+.bookingContainer {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.bookingInfo h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+}
+
+.bookingInfo p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+.bookingHighlights {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bookingHighlights li {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--foreground);
+}
+
+.formWrapper {
+    background: var(--background);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.formLoading {
+    padding: 4rem;
+    text-align: center;
+    opacity: 0.6;
+}
+
+@media (max-width: 1024px) {
+    .headerContent {
+        grid-template-columns: 1fr;
+    }
+
+    .bookingContainer {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerText h1 {
+        font-size: 3rem;
+    }
+
+    .headerAmenities {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .bookingInfo h2 {
+        font-size: 2.5rem;
+    }
+
+    .bookingSection {
+        padding: 6rem 1rem;
+    }
+}

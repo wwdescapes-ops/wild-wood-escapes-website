@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '',
         '/jazby-guest-house',
         '/wild-wood-cottages',
+        '/luna-lights-guest-house',
         '/blog',
         '/contact',
     ].map((route) => ({

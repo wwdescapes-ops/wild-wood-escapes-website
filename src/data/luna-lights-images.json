@@ -1,0 +1,90 @@
+{
+    "bathroom": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772448229/IMG_20250616_092309_vsuiqu.jpg",
+            "width": 2256,
+            "height": 4000,
+            "aspect_ratio": 0.56,
+            "format": "jpg",
+            "public_id": "IMG_20250616_092309_vsuiqu"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772448229/IMG_20250615_150135_stl79n.jpg",
+            "width": 2256,
+            "height": 4000,
+            "aspect_ratio": 0.56,
+            "format": "jpg",
+            "public_id": "IMG_20250615_150135_stl79n"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772448228/IMG_20250615_150158_w7yecc.jpg",
+            "width": 2256,
+            "height": 4000,
+            "aspect_ratio": 0.56,
+            "format": "jpg",
+            "public_id": "IMG_20250615_150158_w7yecc"
+        }
+    ],
+    "bedroom": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772454503/IMG_20250615_150230_x84ldr.jpg",
+            "width": 4000,
+            "height": 2256,
+            "aspect_ratio": 1.77,
+            "format": "jpg",
+            "public_id": "IMG_20250615_150230_x84ldr"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772454503/IMG_20250615_145800_stxm06.jpg",
+            "width": 2256,
+            "height": 4000,
+            "aspect_ratio": 0.56,
+            "format": "jpg",
+            "public_id": "IMG_20250615_145800_stxm06"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772454502/IMG_20250615_145655_oxwmfv.jpg",
+            "width": 4000,
+            "height": 2256,
+            "aspect_ratio": 1.77,
+            "format": "jpg",
+            "public_id": "IMG_20250615_145655_oxwmfv"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772454501/IMG_20250615_145614_lbxv46.jpg",
+            "width": 4000,
+            "height": 2256,
+            "aspect_ratio": 1.77,
+            "format": "jpg",
+            "public_id": "IMG_20250615_145614_lbxv46"
+        }
+    ],
+    "exterior": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772454800/IMG_20250615_150333_wmr2sx.jpg",
+            "width": 2256,
+            "height": 4000,
+            "aspect_ratio": 0.56,
+            "format": "jpg",
+            "public_id": "IMG_20250615_150333_wmr2sx"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772454799/IMG_20250615_150252_ijlriy.jpg",
+            "width": 4000,
+            "height": 2256,
+            "aspect_ratio": 1.77,
+            "format": "jpg",
+            "public_id": "IMG_20250615_150252_ijlriy"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772454798/IMG_20250615_150321_i6ugxw.jpg",
+            "width": 2256,
+            "height": 4000,
+            "aspect_ratio": 0.56,
+            "format": "jpg",
+            "public_id": "IMG_20250615_150321_i6ugxw"
+        }
+    ],
+    "kitchen": [],
+    "living-room": []
+}

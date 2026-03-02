@@ -23,7 +23,11 @@ PROPERTIES = {
     "wildwood": {
         "folder": "images/wild-wood-cottages",
         "output": "src/data/wildwood-images.json"
-  }
+  },
+    "luna-light": {
+        "folder": "images/luna-light",
+        "output": "src/data/luna-lights-images.json"
+    }
 }
 
 SECTIONS = ["bathroom", "bedroom", "exterior", "kitchen", "living-room"]
