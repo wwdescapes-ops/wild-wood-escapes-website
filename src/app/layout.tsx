@@ -18,6 +18,7 @@ const familjen = Familjen_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://wildwoodescapes.co.ke'),
   title: {
     template: "%s | Wild Wood Escapes",
     default: "Wild Wood Escapes | Best Cottages & Guest Houses in Naivasha",
