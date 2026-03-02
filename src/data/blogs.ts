@@ -49,15 +49,15 @@ At Wild Wood Escapes, our properties—Jazby Guest House and Wild Wood Cottages�
         date: '2026-03-01',
         author: 'Admin',
         image: '/images/wildwood/exterior-3.jpg',
-        content: `Hell's Gate National Park is a jewel of the Rift Valley, and planning the perfect visit requires a balance of adventure and relaxation. If you're looking for the best **cottages near Hell's Gate National Park**, look no further than Wild Wood Cottages. 
+        content: `Hell's Gate National Park is a jewel of the Rift Valley, and planning the perfect visit requires a balance of adventure and relaxation. If you're looking for the best cottages near Hell's Gate National Park, look no further than Wild Wood Cottages. 
 
-### Day 1: Arrival & Sunset Views
-Start your **staycation Naivasha** by checking into your private sanctuary. Spend the afternoon cycling through the park's main circuit, spotting zebras and giraffes. Head back to the cottages—the ultimate **Naivasha holiday homes**—to enjoy a sunset over the cliffs from your private porch.
+Day 1: Arrival & Sunset Views
+Start your staycation Naivasha by checking into your private sanctuary. Spend the afternoon cycling through the park's main circuit, spotting zebras and giraffes. Head back to the cottages—the ultimate Naivasha holiday homes—to enjoy a sunset over the cliffs from your private porch.
 
-### Day 2: The Gorges & The Spa
+Day 2: The Gorges & The Spa
 Dedicate your morning to exploring the Ol Njorowa Gorges with a local guide. After a lunch prepared in your self-catering kitchen, head to the Olkaria Geothermal Spa for a dip in the natural hot water pools.
 
-Wild Wood Cottages stands out as one of the most serene **vacation rentals Naivasha** has to offer, combining proximity to the park with the quiet luxury of a private retreat. Book your Hell's Gate adventure today!`
+Wild Wood Cottages stands out as one of the most serene vacation rentals Naivasha has to offer, combining proximity to the park with the quiet luxury of a private retreat. Book your Hell's Gate adventure today!`
     },
     {
         slug: 'ultimate-wrc-safari-rally-kenya-guide',
@@ -66,19 +66,19 @@ Wild Wood Cottages stands out as one of the most serene **vacation rentals Naiva
         date: '2026-03-01',
         author: 'Admin',
         image: '/images/jazby/exterior-2.jpg',
-        content: `The **WRC Safari Rally Kenya** is not just a race; it's a global phenomenon that transforms Naivasha into the ultimate **motorsports destination**. From the dust of the Sleeping Warrior to the high-speed stretches of Kedong, the energy is electric.
+        content: `The WRC Safari Rally Kenya is not just a race; it's a global phenomenon that transforms Naivasha into the ultimate motorsports destination. From the dust of the Sleeping Warrior to the high-speed stretches of Kedong, the energy is electric.
 
-### Why Naivasha is the Place to Be
+Why Naivasha is the Place to Be
 During the rally, Naivasha becomes the heart of the world's toughest motorsport event. Fans from across the globe gather to witness the sheer power of the Rally1 hybrids as they tackle the iconic Kenyan landscape. The "vibe" is unmatched—from the service park buzz to the lakeside sundowners after a day on the stages.
 
-### The Best Place to Stay During WRC Safari Rally
-Finding the right **Naivasha rally accommodation** is critical. You want a place that offers both proximity to the action and a serene escape from the crowds. Jazby Guest House and Wild Wood Cottages are recognized as the **best place to stay during WRC Safari Rally** for several reasons:
+The Best Place to Stay During WRC Safari Rally
+Finding the right Naivasha rally accommodation is critical. You want a place that offers both proximity to the action and a serene escape from the crowds. Jazby Guest House and Wild Wood Cottages are recognized as the best place to stay during WRC Safari Rally for several reasons:
 
-1.  **Strategic Location**: Beat the traffic and reach the spectator zones early.
-2.  **Peace & Quiet**: After a day of engines roaring, retreat to our soundproofed, serene havens.
-3.  **Self-Catering Freedom**: Avoid the fully-booked hotel restaurants and cook your favorite meals in our modern kitchens.
-4.  **Secure Parking**: Essential for rally fans traveling with their own gear.
+1.  Strategic Location: Beat the traffic and reach the spectator zones early.
+2.  Peace & Quiet: After a day of engines roaring, retreat to our soundproofed, serene havens.
+3.  Self-Catering Freedom: Avoid the fully-booked hotel restaurants and cook your favorite meals in our modern kitchens.
+4.  Secure Parking: Essential for rally fans traveling with their own gear.
 
-Whether you're a die-hard motorsports fan or just here for the atmosphere, make **WRC Safari Rally 2026** your most memorable one yet. Book your stay at Wild Wood Escapes—the premier choice for discerning rally-goers.`
+Whether you're a die-hard motorsports fan or just here for the atmosphere, make WRC Safari Rally 2026 your most memorable one yet. Book your stay at Wild Wood Escapes—the premier choice for discerning rally-goers.`
     }
 ];
