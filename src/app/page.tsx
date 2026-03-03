@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone } from 'lucide-react';
+import Image from 'next/image';
+import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone, Leaf } from 'lucide-react';
 import ReviewsSection from '@/components/ReviewsSection';
 import styles from './page.module.css';
 
@@ -116,6 +117,57 @@ export default function Home() {
             </motion.div>
           </div>
         </motion.div>
+      </section>
+
+      <section id="eco-friendly" className={styles.ecoSection}>
+        <div className="container">
+          <div className={styles.ecoContent}>
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className={styles.ecoImageWrapper}
+            >
+              <Image
+                src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772337457/Silv-4164_cyfr22.jpg"
+                alt="Lush green compound at Wild Wood Cottages in Naivasha"
+                width={800}
+                height={600}
+                className={styles.ecoImage}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className={styles.ecoText}
+            >
+              <div className={styles.ecoTag}>
+                <Leaf size={16} />
+                <span>Sustainable Hospitality</span>
+              </div>
+              <h2>Eco-Friendly Practices at Our Naivasha Nature Retreats</h2>
+              <p>
+                At Wild Wood Escapes, we believe in preserving the beauty of Nakuru County for generations to come.
+                Our lush green compound at Wild Wood Cottages is more than just a scenic backdrop; it&apos;s a testament
+                to our dedication to sustainable hospitality.
+              </p>
+              <p>
+                As part of the best cottages in Naivasha, we implement eco-friendly practices across all our
+                properties to ensure your staycation in Naivasha remains a pristine nature retreat.
+                From energy conservation to responsible water management, our goal is to provide the
+                cleanest guest houses in Naivasha while minimizing our environmental footprint near Hell&apos;s Gate.
+              </p>
+              <ul className={styles.ecoList}>
+                <li>Green landscaping and biodiversity preservation</li>
+                <li>Sustainable waste management across properties</li>
+                <li>Energy-efficient lighting and appliances</li>
+              </ul>
+            </motion.div>
+          </div>
+        </div>
       </section>
 
       <section id="amenities" className={styles.amenitiesSection}>
