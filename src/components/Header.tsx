@@ -37,7 +37,7 @@ export default function Header() {
         { name: 'Home', href: '/' },
         { name: 'Jazby', href: '/jazby-guest-house' },
         { name: 'Wild Wood', href: '/wild-wood-cottages' },
-        { name: 'Luna Lights', href: '/luna-lights-guest-house' },
+        { name: 'Luna Light', href: '/luna-lights-guest-house' },
         { name: 'Stories', href: '/blog' },
     ];
 

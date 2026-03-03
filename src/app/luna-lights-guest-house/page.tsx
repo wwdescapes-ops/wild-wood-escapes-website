@@ -15,12 +15,12 @@ const LUNA_LIGHTS_SECTIONS = [
     },
     {
         title: "The Bathroom",
-        description: "Our clean and functional bathrooms offer everything you need for a refreshing stay. We prioritize hygiene and convenience to ensure your time at Luna Lights is as comfortable as possible.",
+        description: "Our clean and functional bathrooms offer everything you need for a refreshing stay. We prioritize hygiene and convenience to ensure your time at Luna Light is as comfortable as possible.",
         images: lunaLightsImages["bathroom"]
     },
     {
         title: "The Exterior",
-        description: "Luna Lights Guest House is situated in a convenient location in Naivasha, offering easy access to local attractions. Our exterior areas provide a safe and welcoming environment for all our guests.",
+        description: "Luna Light Guest House is situated in a convenient location in Naivasha, offering easy access to local attractions. Our exterior areas provide a safe and welcoming environment for all our guests.",
         images: lunaLightsImages["exterior"]
     }
 ];
@@ -50,7 +50,7 @@ export default function LunaLightsPage() {
                         <div className={styles.amenity}><ShowerHead size={20} /> <span>Hot Shower</span></div>
                         <div className={styles.amenity}><ConciergeBell size={20} /> <span>Friendly Service</span></div>
                     </div>
-                    <button onClick={scrollToBooking} className="btn-primary">Book Luna Lights Now</button>
+                    <button onClick={scrollToBooking} className="btn-primary">Book Luna Light Now</button>
                 </div>
             </header>
 
