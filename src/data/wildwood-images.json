@@ -85,6 +85,14 @@
     ],
     "exterior": [
         {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337447/20250614_194709_bthp02.jpg",
+            "width": 4080,
+            "height": 2296,
+            "aspect_ratio": 1.78,
+            "format": "jpg",
+            "public_id": "20250614_194709_bthp02"
+        },
+        {
             "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772340553/20250614_170518_xivoj3.jpg",
             "width": 4080,
             "height": 2296,
