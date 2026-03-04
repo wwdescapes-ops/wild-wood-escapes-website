@@ -1,10 +1,13 @@
 'use client';
 
+import { useState } from 'react';
+
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone, Leaf } from 'lucide-react';
 import ReviewsSection from '@/components/ReviewsSection';
+import Lightbox from '@/components/Lightbox';
 import wildwoodImages from '@/data/wildwood-images.json';
 import jazbyImages from '@/data/jazby-images.json';
 import lunaImages from '@/data/luna-lights-images.json';
@@ -67,9 +70,41 @@ const AMENITIES = [
   }
 ];
 
+interface GalleryImage {
+  url: string;
+  width?: number;
+  height?: number;
+  [key: string]: string | number | boolean | undefined; // To handle other properties from JSON
+}
+
 export default function Home() {
+  const [lightbox, setLightbox] = useState({
+    isOpen: false,
+    images: [] as { url: string; title?: string }[],
+    index: 0
+  });
+
+  const openLightbox = (images: { url: string; title?: string }[], index: number) => {
+    setLightbox({ isOpen: true, images, index });
+  };
+
+  const closeLightbox = () => {
+    setLightbox(prev => ({ ...prev, isOpen: false }));
+  };
+
+  const setLightboxIndex = (index: number) => {
+    setLightbox(prev => ({ ...prev, index }));
+  };
+
   return (
     <div className={styles.container}>
+      <Lightbox
+        isOpen={lightbox.isOpen}
+        onClose={closeLightbox}
+        images={lightbox.images}
+        currentIndex={lightbox.index}
+        setCurrentIndex={setLightboxIndex}
+      />
       <section id="hero" className={styles.hero}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -196,7 +231,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className={styles.imageGrid}>
-                {property.images.map((img, iIdx) => (
+                {property.images.map((img: GalleryImage, iIdx: number) => (
                   <motion.div
                     key={iIdx}
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -204,6 +239,7 @@ export default function Home() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: iIdx * 0.05 }}
                     className={styles.tourImageWrapper}
+                    onClick={() => openLightbox(property.images.map((i: GalleryImage) => ({ url: i.url, title: property.name })), iIdx)}
                   >
                     <Image
                       src={img.url}

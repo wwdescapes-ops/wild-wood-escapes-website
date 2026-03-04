@@ -514,6 +514,7 @@
     border-radius: 12px;
     background: var(--surface);
     position: relative;
+    cursor: pointer;
 }
 
 .tourImage {
