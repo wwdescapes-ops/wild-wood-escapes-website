@@ -4,6 +4,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
@@ -70,6 +71,7 @@ export default function RootLayout({
         <WhatsAppButton />
       </body>
       <GoogleAnalytics gaId="G-644NT2K92T" />
+      <SpeedInsights />
     </html>
   );
 }
