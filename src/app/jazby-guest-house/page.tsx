@@ -101,7 +101,7 @@ export default function JazbyPage() {
             </main>
 
             <section id="booking" ref={bookingRef} className={styles.bookingSection}>
-                <div className={`container ${styles.bookingContainer}`}>
+                <div className={styles.bookingContainer}>
                     <div className={styles.bookingInfo}>
                         <h2>Reserve Your Stay at Jazby Guest House</h2>
                         <p>Experience the ultimate comfort at Jazby Guest House. Fill out the form below, and our team will get back to you with availability and a personalized quote.</p>

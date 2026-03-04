@@ -72,7 +72,7 @@ export default function LunaLightsPage() {
             </main>
 
             <section ref={bookingRef} className={styles.bookingSection}>
-                <div className={`container ${styles.bookingContainer}`}>
+                <div className={styles.bookingContainer}>
                     <div className={styles.bookingInfo}>
                         <h2>Affordable Stay in Naivasha</h2>
                         <p>Looking for a budget-friendly and comfortable place to stay? Luna Light Guest House is your best choice for very affordable guest rooms in Naivasha. Contact us today to book your room.</p>

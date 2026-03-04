@@ -101,7 +101,7 @@ export default function WildWoodPage() {
             </main>
 
             <section id="booking" ref={bookingRef} className={styles.bookingSection}>
-                <div className={`container ${styles.bookingContainer}`}>
+                <div className={styles.bookingContainer}>
                     <div className={styles.bookingInfo}>
                         <h2>Book Your Naivasha Nature Retreat</h2>
                         <p>Reconnect with nature at Wild Wood Cottages. Fill out the form below to enquire about availability and special rates for your serene getaway.</p>

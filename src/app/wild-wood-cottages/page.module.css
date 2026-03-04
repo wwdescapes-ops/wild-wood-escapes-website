@@ -71,7 +71,7 @@
 }
 
 .bookingSection {
-    padding: 10rem 2rem;
+    padding: 8rem 0;
     background-color: var(--surface);
     border-top: 1px solid var(--border);
 }
@@ -82,7 +82,9 @@
     gap: 6rem;
     align-items: flex-start;
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .bookingInfo h2 {
