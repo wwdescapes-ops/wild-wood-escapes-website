@@ -5,6 +5,9 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone, Leaf } from 'lucide-react';
 import ReviewsSection from '@/components/ReviewsSection';
+import wildwoodImages from '@/data/wildwood-images.json';
+import jazbyImages from '@/data/jazby-images.json';
+import lunaImages from '@/data/luna-lights-images.json';
 import styles from './page.module.css';
 
 const AMENITIES = [
@@ -86,17 +89,17 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className={styles.propertyCardWrapper}
             >
-              <Link href="/jazby-guest-house" className={styles.propertyCard}>
-                <div className={styles.cardImagePlaceholder}>
+              <Link href="/wild-wood-cottages" className={styles.propertyCard}>
+                <div className={styles.cardImagePlaceholderDark}>
                   <div className={styles.badgeContainer}>
-                    <span className={styles.badge}>Guest House</span>
+                    <span className={styles.badge}>Cottages</span>
                     <span className={styles.ecoBadge}><Leaf size={14} /> Eco-Friendly</span>
                   </div>
                 </div>
                 <div className={styles.cardContent}>
-                  <h3>Jazby Guest House</h3>
-                  <p>Top-rated comfort and very affordable guest rooms in Naivasha. One of the premier vacation rentals Naivasha has to offer near the lake.</p>
-                  <span className={styles.cardLink}>Explore Jazby Guest House details &rarr;</span>
+                  <h3>Wild Wood Cottages</h3>
+                  <p>A serene nature retreat and some of the best cottages in Naivasha, perfect for a self-catering getaway.</p>
+                  <span className={styles.cardLink}>More details &rarr;</span>
                 </div>
               </Link>
             </motion.div>
@@ -107,17 +110,36 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className={styles.propertyCardWrapper}
             >
-              <Link href="/wild-wood-cottages" className={styles.propertyCard}>
-                <div className={styles.cardImagePlaceholderDark}>
+              <Link href="/jazby-guest-house" className={styles.propertyCard}>
+                <div className={styles.cardImagePlaceholder}>
                   <div className={styles.badgeContainer}>
-                    <span className={styles.badge}>Cottages</span>
-                    <span className={styles.ecoBadge}><Leaf size={14} /> Eco-Friendly</span>
+                    <span className={styles.badge}>Guest House</span>
                   </div>
                 </div>
                 <div className={styles.cardContent}>
-                  <h3>Wild Wood Cottages</h3>
-                  <p>A serene nature retreat and some of the best cottages in Naivasha, perfect for a self-catering getaway in premium Naivasha holiday homes.</p>
-                  <span className={styles.cardLink}>Explore Wild Wood Cottages details &rarr;</span>
+                  <h3>Jazby Guest House</h3>
+                  <p>Top-rated comfort and guest rooms in Naivasha. Premier vacation rental near the lake.</p>
+                  <span className={styles.cardLink}>More details &rarr;</span>
+                </div>
+              </Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className={styles.propertyCardWrapper}
+            >
+              <Link href="/luna-lights-guest-house" className={styles.propertyCard}>
+                <div className={styles.cardImageLuna}>
+                  <div className={styles.badgeContainer}>
+                    <span className={styles.badge}>Guest House</span>
+                  </div>
+                </div>
+                <div className={styles.cardContent}>
+                  <h3>Luna Light</h3>
+                  <p>Experience comfort and convenience at Luna Light Guest House, offering affordable rooms in Naivasha.</p>
+                  <span className={styles.cardLink}>More details &rarr;</span>
                 </div>
               </Link>
             </motion.div>
@@ -137,7 +159,7 @@ export default function Home() {
             >
               <div className={styles.mainImageWrapper}>
                 <Image
-                  src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772337457/Silv-4164_cyfr22.jpg"
+                  src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772337446/Silv-4137_wh1yvp.jpg"
                   alt="Lush green compound at Wild Wood Cottages"
                   width={700}
                   height={500}
@@ -199,6 +221,63 @@ export default function Home() {
               </ul>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      <section id="visual-tour" className={styles.visualTourSection}>
+        <div className="container">
+          <div className={styles.visualTourHeader}>
+            <span>Visual Tour</span>
+            <h2>Discover Our Spaces</h2>
+            <p>Take a glimpse into the comfort and beauty that awaits you at our premier Naivasha retreats.</p>
+          </div>
+
+          {[
+            {
+              name: "Wild Wood Cottages",
+              images: [...wildwoodImages.exterior, ...wildwoodImages.bedroom, ...wildwoodImages.bathroom, ...wildwoodImages.living_room, ...wildwoodImages.kitchen].slice(0, 8),
+              link: "/wild-wood-cottages"
+            },
+            {
+              name: "Jazby Guest House",
+              images: [...jazbyImages.exterior, ...jazbyImages.bedroom, ...jazbyImages.bathroom, ...jazbyImages.living_room, ...jazbyImages.kitchen].slice(0, 8),
+              link: "/jazby-guest-house"
+            },
+            {
+              name: "Luna Light",
+              images: [...lunaImages.exterior, ...lunaImages.bedroom, ...lunaImages.bathroom].slice(0, 8),
+              link: "/luna-lights-guest-house"
+            }
+          ].map((property, pIdx) => (
+            <div key={pIdx} className={styles.propertyTour}>
+              <div className={styles.propertyTourMeta}>
+                <h3>{property.name}</h3>
+                <Link href={property.link} className={styles.viewMoreBtn}>
+                  View more by {property.name} &rarr;
+                </Link>
+              </div>
+              <div className={styles.imageGrid}>
+                {property.images.map((img, iIdx) => (
+                  <motion.div
+                    key={iIdx}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: iIdx * 0.05 }}
+                    className={styles.tourImageWrapper}
+                  >
+                    <Image
+                      src={img.url}
+                      alt={`${property.name} view ${iIdx + 1}`}
+                      width={400}
+                      height={300}
+                      className={styles.tourImage}
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
