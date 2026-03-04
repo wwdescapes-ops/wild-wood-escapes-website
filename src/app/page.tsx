@@ -147,77 +147,6 @@ export default function Home() {
         </motion.div>
       </section>
 
-      <section id="eco-friendly" className={styles.ecoSection}>
-        <div className="container">
-          <div className={styles.ecoContent}>
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              className={styles.ecoImageGroup}
-            >
-              <div className={styles.mainImageWrapper}>
-                <Image
-                  src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772337446/Silv-4137_wh1yvp.jpg"
-                  alt="Lush green compound at Wild Wood Cottages"
-                  width={700}
-                  height={500}
-                  className={styles.ecoImageMain}
-                />
-              </div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8, x: 50 }}
-                whileInView={{ opacity: 1, scale: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.4, ease: "backOut" }}
-                className={styles.floatingImageWrapper}
-              >
-                <Image
-                  src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772562319/mary-kiragu-eco-tourism-img-1_r1sth7.jpg"
-                  alt="Mary Kiragu at Ecomondo Tech Expo 2025"
-                  width={400}
-                  height={500}
-                  className={styles.ecoImageFloating}
-                />
-                <div className={styles.imageCaption}>
-                  <strong>Mary Kiragu</strong>
-                  <span>Founder & Director</span>
-                </div>
-              </motion.div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className={styles.ecoText}
-            >
-              <div className={styles.ecoTag}>
-                <Leaf size={16} />
-                <span>Global Eco-Tourism & Circular Hospitality</span>
-              </div>
-              <h2>Pioneering <strong>Sustainable Hospitality</strong> on the Global Stage</h2>
-              <p>
-                From rural Naivasha to the world stage at <strong>Ecomondo 2025 in Italy</strong>,
-                Wild Wood Escapes is pioneering circular hospitality. Our founder, Mary Kiragu,
-                has showcased our retreat as a global model of bioeconomy innovation and sustainable luxury.
-              </p>
-              <p>
-                What began as an experiment in upcycling has evolved into world-class nature retreats.
-                We remain rooted in the practices that define us: cooking on solar, harvesting
-                rainwater, and growing organic food, proving that purpose-driven ideas can travel the world.
-              </p>
-              <ul className={styles.ecoList}>
-                <li>Circular hospitality: Upcycled container architecture</li>
-                <li>100% solar cooking and renewable energy integration</li>
-                <li>Rainwater harvesting and organic farm-to-table dining</li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       <section id="visual-tour" className={styles.visualTourSection}>
         <div className="container">
           <div className={styles.visualTourHeader}>
@@ -326,16 +255,97 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="eco-friendly" className={styles.ecoSection}>
+        <div className="container">
+          <div className={styles.ecoContent}>
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className={styles.ecoImageGroup}
+            >
+              <div className={styles.mainImageWrapper}>
+                <Image
+                  src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772337446/Silv-4137_wh1yvp.jpg"
+                  alt="Lush green compound at Wild Wood Cottages"
+                  width={700}
+                  height={500}
+                  className={styles.ecoImageMain}
+                />
+              </div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8, x: 50 }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4, ease: "backOut" }}
+                className={styles.floatingImageWrapper}
+              >
+                <Image
+                  src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772562319/mary-kiragu-eco-tourism-img-1_r1sth7.jpg"
+                  alt="Mary Kiragu at Ecomondo Tech Expo 2025"
+                  width={400}
+                  height={500}
+                  className={styles.ecoImageFloating}
+                />
+                <div className={styles.imageCaption}>
+                  <strong>Mary Kiragu</strong>
+                  <span>Founder & Director</span>
+                </div>
+              </motion.div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className={styles.ecoText}
+            >
+              <div className={styles.ecoTag}>
+                <Leaf size={16} />
+                <span>Global Eco-Tourism & Circular Hospitality</span>
+              </div>
+              <h2>Pioneering <strong>Sustainable Hospitality</strong> on the Global Stage</h2>
+              <p>
+                From rural Naivasha to the world stage at <strong>Ecomondo 2025 in Italy</strong>,
+                Wild Wood Escapes is pioneering circular hospitality. Our founder, Mary Kiragu,
+                has showcased our retreat as a global model of bioeconomy innovation and sustainable luxury.
+              </p>
+              <p>
+                What began as an experiment in upcycling has evolved into world-class nature retreats.
+                We remain rooted in the practices that define us: cooking on solar, harvesting
+                rainwater, and growing organic food, proving that purpose-driven ideas can travel the world.
+              </p>
+              <ul className={styles.ecoList}>
+                <li>Circular hospitality: Upcycled container architecture</li>
+                <li>100% solar cooking and renewable energy integration</li>
+                <li>Rainwater harvesting and organic farm-to-table dining</li>
+              </ul>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       <ReviewsSection isFeatured />
 
       <section id="cta" className={styles.ctaSection}>
-        <div className={`container ${styles.ctaContent}`}>
-          <h2>Book the Best Cottages in Naivasha for Your Staycation</h2>
-          <p>Book your stay at the best guest houses and cottages in Naivasha today. Experience the ultimate relaxation in our premium Naivasha holiday homes.</p>
-          <Link href="/contact" className={styles.ctaButton}>
-            <Phone size={20} />
-            Contact Us
-          </Link>
+        <div className={`container ${styles.ctaContainer}`}>
+          <div className={styles.ctaContent}>
+            <h2>Book the Best Cottages in Naivasha for Your Staycation</h2>
+            <p>Experience the ultimate relaxation in our premium Naivasha holiday homes. Book your stay at the best guest houses and cottages in Naivasha today.</p>
+            <Link href="/contact" className={styles.ctaButton}>
+              <Phone size={20} />
+              Contact Us
+            </Link>
+          </div>
+          <div className={styles.ctaImageWrapper}>
+            <Image
+              src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772343110/IMG_0509_xbupi8.jpg"
+              alt="Holiday Home Interior"
+              fill
+              className={styles.ctaImage}
+            />
+          </div>
         </div>
       </section>
     </div>
