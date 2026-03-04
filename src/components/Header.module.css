@@ -63,6 +63,10 @@
     color: var(--accent);
 }
 
+.menuButton {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .navLinks {
         display: none;
@@ -83,11 +87,12 @@
     .menuButton:active {
         transform: scale(0.9);
     }
+
+    .logo span {
+        font-size: 0.85rem;
+    }
 }
 
-.menuButton {
-    display: none;
-}
 
 .mobileOverlay {
     position: fixed;
