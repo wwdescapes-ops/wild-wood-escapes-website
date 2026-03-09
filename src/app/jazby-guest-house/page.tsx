@@ -6,7 +6,7 @@ import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
 import ReviewsSection from '@/components/ReviewsSection';
 import jazbyImages from '@/data/jazby-images.json';
-import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils, Leaf } from 'lucide-react';
+import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils, Leaf, Facebook, Instagram } from 'lucide-react';
 import styles from './page.module.css';
 
 const JAZBY_LOGO = "/logos/jazby/jazby-1-no-bg.png";
@@ -110,6 +110,24 @@ export default function JazbyPage() {
                             <li>✓ Direct communication</li>
                             <li>✓ Best price guaranteed</li>
                         </ul>
+
+                        <div className={styles.socialConnect}>
+                            <h3>Follow Jazby Guest House</h3>
+                            <div className={styles.socialLinks}>
+                                <a href="https://www.facebook.com/jazbyguesthouse/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                                    <Facebook size={20} />
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="https://www.instagram.com/jazbyhomestay/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                                    <Instagram size={20} />
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://www.tiktok.com/@jazbyguesthouse" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                                    <span className={styles.tiktokIcon}>T</span>
+                                    <span>TikTok</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.formWrapper}>
                         <Suspense fallback={<div className={styles.formLoading}>Loading form...</div>}>
