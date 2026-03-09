@@ -6,7 +6,7 @@ import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
 import ReviewsSection from '@/components/ReviewsSection';
 import wildwoodImages from '@/data/wildwood-images.json';
-import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils, Leaf } from 'lucide-react';
+import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils, Leaf, Facebook, Instagram } from 'lucide-react';
 import styles from './page.module.css';
 
 const WILDWOOD_LOGO = "/logos/wildwood-cottages/wildwood-cottages-no-bg.png";
@@ -110,6 +110,24 @@ export default function WildWoodPage() {
                             <li>✓ Direct enquiry response</li>
                             <li>✓ Personalized nature retreats</li>
                         </ul>
+
+                        <div className={styles.socialConnect}>
+                            <h3>Follow Wild Wood Cottages</h3>
+                            <div className={styles.socialLinks}>
+                                <a href="https://www.facebook.com/p/Wild-Wood-Cottages-WWC-61577249319225/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                                    <Facebook size={20} />
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="https://www.instagram.com/wildwoodcottages/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                                    <Instagram size={20} />
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://www.tiktok.com/@wildwoodcottagesnaivasha" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                                    <span className={styles.tiktokIcon}>T</span>
+                                    <span>TikTok</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.formWrapper}>
                         <Suspense fallback={<div className={styles.formLoading}>Loading form...</div>}>

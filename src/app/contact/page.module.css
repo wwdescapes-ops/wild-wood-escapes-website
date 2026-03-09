@@ -76,11 +76,43 @@
     color: var(--accent);
 }
 
-.socials {
+.propertySocials {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2.5rem;
     padding-left: 2.25rem;
+    margin-top: 1.5rem;
+}
+
+.propertySocialBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.propertyBrand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.propertyBrand span {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--foreground);
+    opacity: 0.6;
+}
+
+.propertyLogo {
+    object-fit: contain;
+}
+
+.socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .socialItem {
@@ -88,15 +120,35 @@
     align-items: center;
     gap: 0.75rem;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--foreground);
     opacity: 0.8;
-    transition: all 0.2s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
 }
 
 .socialItem:hover {
     color: var(--accent);
     opacity: 1;
-    transform: translateX(4px);
+    transform: translateY(-2px);
+}
+
+.tiktokIcon {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--foreground);
+    color: var(--background);
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.socialItem:hover .tiktokIcon {
+    background: var(--accent);
+    color: #fff;
 }
 
 
