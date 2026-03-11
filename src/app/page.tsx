@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone, Leaf } from 'lucide-react';
+import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone, Leaf, TreePine, HeartHandshake, Users } from 'lucide-react';
 import ReviewsSection from '@/components/ReviewsSection';
 import Lightbox from '@/components/Lightbox';
 import wildwoodImages from '@/data/wildwood-images.json';
@@ -70,6 +70,29 @@ const AMENITIES = [
   }
 ];
 
+const WHY_CHOOSE_US = [
+  {
+    icon: <TreePine size={32} />,
+    title: "Unique Nature Experiences",
+    description: "Immerse yourself in Naivasha's pristine environment, waking up to the sounds of nature right outside your door."
+  },
+  {
+    icon: <Sparkles size={32} />,
+    title: "Comfortable & Eco-Friendly Stays",
+    description: "We pair luxurious comfort with sustainable practices to ensure an unforgettable, guilt-free nature retreat."
+  },
+  {
+    icon: <HeartHandshake size={32} />,
+    title: "Personalized Guest Experiences",
+    description: "Our dedicated team goes above and beyond to tailor your stay to your unique preferences and needs."
+  },
+  {
+    icon: <Users size={32} />,
+    title: "Perfect for Families, Couples & Groups",
+    description: "Whether it's a romantic getaway or a family reunion, our properties are designed to comfortably accommodate all types of travelers."
+  }
+];
+
 interface GalleryImage {
   url: string;
   width?: number;
@@ -112,7 +135,7 @@ export default function Home() {
           transition={{ duration: 1, ease: 'easeOut' }}
           className={styles.heroContent}
         >
-          <h1>Best Guest Houses in Naivasha for Your Next Escape</h1>
+          <h1>Escape to Nature with Wildwood Escapes</h1>
           <p>
             Experience the best guest houses in Naivasha near Hell&apos;s Gate.
             A perfect blend of nature, comfort, and premium hospitality for your ultimate staycation in Naivasha and one of the best nature escapes in Kenya.
@@ -288,6 +311,43 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="why-choose-us" className={styles.whySection}>
+        <div className={`container ${styles.whyContainer}`}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={styles.whyContentBox}
+          >
+            <div className={styles.whyHeader}>
+              <span className={styles.whyBadge}>Our Promise</span>
+              <h2>Why Choose Wildwood Escapes</h2>
+              <p>We are dedicated to providing the ultimate balance of serenity, comfort, and sustainable practice for your Naivasha staycation.</p>
+            </div>
+            
+            <div className={styles.whyGrid}>
+              {WHY_CHOOSE_US.map((reason, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.2 + (index * 0.1) }}
+                  className={styles.whyCard}
+                >
+                  <div className={styles.whyIconWrapper}>
+                    {reason.icon}
+                  </div>
+                  <h3>{reason.title}</h3>
+                  <p>{reason.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
