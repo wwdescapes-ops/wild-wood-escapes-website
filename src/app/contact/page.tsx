@@ -30,7 +30,7 @@ export default function ContactPage() {
                             <Mail size={20} className={styles.icon} />
                             <h3>Email</h3>
                         </div>
-                        <p>info@wildwoodescapes.com</p>
+                        <p><a href="mailto:info@wildwoodescapes.com">info@wildwoodescapes.com</a></p>
                     </div>
 
                     <div className={styles.infoBlock}>
@@ -46,7 +46,7 @@ export default function ContactPage() {
                             <Phone size={20} className={styles.icon} />
                             <h3>Phone</h3>
                         </div>
-                        <p>+254 783 777434</p>
+                        <p><a href="tel:+254783777434">+254 783 777434</a></p>
                     </div>
 
                     <div className={styles.infoBlock}>
