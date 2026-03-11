@@ -30,7 +30,7 @@ export default function ContactPage() {
                             <Mail size={20} className={styles.icon} />
                             <h3>Email</h3>
                         </div>
-                        <p>info@wildwoodescapes.com</p>
+                        <p><a href="mailto:info@wildwoodescapes.com">info@wildwoodescapes.com</a></p>
                     </div>
 
                     <div className={styles.infoBlock}>
