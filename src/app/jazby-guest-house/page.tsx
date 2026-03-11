@@ -65,7 +65,7 @@ export default function JazbyPage() {
                                 <Image src={JAZBY_LOGO} alt="Jazby Logo" width={180} height={70} className={styles.headerLogo} />
                             </div>
                         </div>
-                        <p>Discover the best guest rooms near Nakuru and full accommodation guest houses in Naivasha. Jazby Guest House offers premium comfort, exceptional value, and free WiFi, perfectly positioned for your serene stay near Hell&apos;s Gate.</p>
+                        <p>Discover the best guest rooms near Nakuru and luxury nature stays near Nairobi. Jazby Guest House offers premium comfort, exceptional value, and free WiFi, perfectly positioned for your serene stay near Hell&apos;s Gate.</p>
 
                         <div className={styles.headerAmenities}>
                             <div className={styles.amenity}><Home size={18} /> <span>Apartments</span></div>

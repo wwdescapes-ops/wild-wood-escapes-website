@@ -713,6 +713,115 @@
     }
 }
 
+.whySection {
+    padding: 8rem 0;
+    background-color: var(--background);
+}
+
+.whyContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.whyContentBox {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 4rem;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+}
+
+.whyHeader {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem;
+}
+
+.whyBadge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(67, 97, 238, 0.1);
+    color: var(--accent);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+}
+
+.whyHeader h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+    color: var(--foreground);
+}
+
+.whyHeader p {
+    font-size: 1.15rem;
+    opacity: 0.8;
+    line-height: 1.7;
+}
+
+.whyGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.whyCard {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.whyCard:hover {
+    border-color: var(--accent);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+}
+
+.whyIconWrapper {
+    width: 64px;
+    height: 64px;
+    background-color: var(--surface);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+    border: 1px solid var(--border);
+}
+
+.whyCard h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--foreground);
+}
+
+.whyCard p {
+    font-size: 1.05rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .whyGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .whyContentBox {
+        padding: 3rem 1.5rem;
+    }
+}
+
 .ctaSection {
     background-color: var(--accent);
     color: #fff;
@@ -743,8 +852,37 @@
 .ctaContent p {
     font-size: 1.2rem;
     opacity: 0.9;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     max-width: 550px;
+}
+
+.ctaContactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.ctaContactItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.ctaContactItem svg {
+    opacity: 0.9;
+}
+
+.ctaContactLink {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.ctaContactLink:hover {
+    color: #000;
 }
 
 .ctaButton {

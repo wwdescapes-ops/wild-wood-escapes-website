@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone, Leaf } from 'lucide-react';
+import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone, Leaf, TreePine, HeartHandshake, Users, Mail, MapPin } from 'lucide-react';
 import ReviewsSection from '@/components/ReviewsSection';
 import Lightbox from '@/components/Lightbox';
 import wildwoodImages from '@/data/wildwood-images.json';
@@ -70,6 +70,29 @@ const AMENITIES = [
   }
 ];
 
+const WHY_CHOOSE_US = [
+  {
+    icon: <TreePine size={32} />,
+    title: "Unique Nature Experiences",
+    description: "Immerse yourself in Naivasha's pristine environment, waking up to the sounds of nature right outside your door."
+  },
+  {
+    icon: <Sparkles size={32} />,
+    title: "Comfortable & Eco-Friendly Stays",
+    description: "We pair luxurious comfort with sustainable practices to ensure an unforgettable, guilt-free nature retreat."
+  },
+  {
+    icon: <HeartHandshake size={32} />,
+    title: "Personalized Guest Experiences",
+    description: "Our dedicated team goes above and beyond to tailor your stay to your unique preferences and needs."
+  },
+  {
+    icon: <Users size={32} />,
+    title: "Perfect for Families, Couples & Groups",
+    description: "Whether it's a romantic getaway or a family reunion, our properties are designed to comfortably accommodate all types of travelers."
+  }
+];
+
 interface GalleryImage {
   url: string;
   width?: number;
@@ -112,10 +135,10 @@ export default function Home() {
           transition={{ duration: 1, ease: 'easeOut' }}
           className={styles.heroContent}
         >
-          <h1>Best Guest Houses in Naivasha for Your Next Escape</h1>
+          <h1>Escape to Nature with Wildwood Escapes</h1>
           <p>
             Experience the best guest houses in Naivasha near Hell&apos;s Gate.
-            A perfect blend of nature, comfort, and premium hospitality for your ultimate staycation in Naivasha.
+            A perfect blend of nature, comfort, and premium hospitality for your ultimate staycation in Naivasha and one of the best nature escapes in Kenya.
           </p>
           <div className={styles.propertiesGrid}>
             <motion.div
@@ -291,6 +314,43 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="why-choose-us" className={styles.whySection}>
+        <div className={`container ${styles.whyContainer}`}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={styles.whyContentBox}
+          >
+            <div className={styles.whyHeader}>
+              <span className={styles.whyBadge}>Our Promise</span>
+              <h2>Why Choose Wildwood Escapes</h2>
+              <p>We are dedicated to providing the ultimate balance of serenity, comfort, and sustainable practice for your Naivasha staycation.</p>
+            </div>
+            
+            <div className={styles.whyGrid}>
+              {WHY_CHOOSE_US.map((reason, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.2 + (index * 0.1) }}
+                  className={styles.whyCard}
+                >
+                  <div className={styles.whyIconWrapper}>
+                    {reason.icon}
+                  </div>
+                  <h3>{reason.title}</h3>
+                  <p>{reason.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <section id="eco-friendly" className={styles.ecoSection}>
         <div className="container">
           <div className={styles.ecoContent}>
@@ -341,16 +401,12 @@ export default function Home() {
                 <Leaf size={16} />
                 <span>Global Eco-Tourism & Circular Hospitality</span>
               </div>
-              <h2>Pioneering <strong>Sustainable Hospitality</strong> on the Global Stage</h2>
+              <h2>Our Story: <strong>Rooted in Nature</strong> & Sustainability</h2>
               <p>
-                From rural Naivasha to the world stage at <strong>Ecomondo 2025 in Italy</strong>,
-                Wild Wood Escapes is pioneering circular hospitality. Our founder, Mary Kiragu,
-                has showcased our retreat as a global model of bioeconomy innovation and sustainable luxury.
+                <strong>Wildwood Escapes was created with a clear mission:</strong> to offer a peaceful connection with nature while providing comfortable and memorable outdoor experiences. As the premier eco retreat Kenya has to offer, we blend raw natural beauty with premium hospitality.
               </p>
               <p>
-                What began as an experiment in upcycling has evolved into world-class nature retreats.
-                We remain rooted in the practices that define us: cooking on solar, harvesting
-                rainwater, and growing organic food, proving that purpose-driven ideas can travel the world.
+                Founded by <strong>Mary Kiragu</strong>, what began as an experiment in upcycling has evolved into world-class nature retreats. From rural Naivasha to showcasing our property as a global model of bioeconomy innovation at <strong>Ecomondo 2025 in Italy</strong>, Mary&apos;s vision of circular hospitality drives everything we do.
               </p>
               <ul className={styles.ecoList}>
                 <li>Circular hospitality: Upcycled container architecture</li>
@@ -369,9 +425,24 @@ export default function Home() {
           <div className={styles.ctaContent}>
             <h2>Book the Best Cottages in Naivasha for Your Staycation</h2>
             <p>Experience the ultimate relaxation in our premium Naivasha holiday homes. Book your stay at the best guest houses and cottages in Naivasha today.</p>
+            
+            <div className={styles.ctaContactInfo}>
+              <div className={styles.ctaContactItem}>
+                <Phone size={20} />
+                <a href="tel:+254783777434" className={styles.ctaContactLink}>+254 783 777434</a>
+              </div>
+              <div className={styles.ctaContactItem}>
+                <Mail size={20} />
+                <a href="mailto:info@wildwoodescapes.com" className={styles.ctaContactLink}>info@wildwoodescapes.com</a>
+              </div>
+              <div className={styles.ctaContactItem}>
+                <MapPin size={20} />
+                <span>Naivasha, Kenya</span>
+              </div>
+            </div>
+
             <Link href="/contact" className={styles.ctaButton}>
-              <Phone size={20} />
-              Contact Us
+              Get in Touch
             </Link>
           </div>
           <div className={styles.ctaImageWrapper}>
