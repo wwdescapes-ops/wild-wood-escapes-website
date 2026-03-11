@@ -2,7 +2,7 @@
 
 import { Suspense } from 'react';
 import Image from 'next/image';
-import { Mail, MapPin, Instagram, Facebook } from 'lucide-react';
+import { Mail, MapPin, Instagram, Facebook, Phone } from 'lucide-react';
 import BookingForm from '@/components/BookingForm';
 import styles from './page.module.css';
 
@@ -39,6 +39,14 @@ export default function ContactPage() {
                             <h3>Location</h3>
                         </div>
                         <p>Naivasha, Nakuru County, Kenya</p>
+                    </div>
+
+                    <div className={styles.infoBlock}>
+                        <div className={styles.blockTitle}>
+                            <Phone size={20} className={styles.icon} />
+                            <h3>Phone</h3>
+                        </div>
+                        <p>+254 783 777434</p>
                     </div>
 
                     <div className={styles.infoBlock}>
