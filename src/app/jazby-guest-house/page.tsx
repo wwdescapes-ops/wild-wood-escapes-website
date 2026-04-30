@@ -85,7 +85,7 @@ export default function JazbyPage() {
 
                     <div className={styles.heroImageWrapper}>
                         <Image
-                            src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772343101/Silv-3891_gh9wum.jpg"
+                            src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772341178/Silv-3858_tawea7.jpg"
                             alt="Jazby Guest House Exterior"
                             fill
                             priority
